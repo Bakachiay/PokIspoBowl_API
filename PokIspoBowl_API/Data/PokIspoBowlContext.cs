@@ -48,6 +48,23 @@ namespace PokIspoBowl_API.Data
                 .HasValue<Dessert>("Dessert");
 
 
+            // Relations OrderLine -> Product / Order (Required)
+            //Empêche de supprimer un produit qui est dans des lignes de commande
+            modelBuilder.Entity<OrderLine>()
+                .HasOne(ol => ol.Product)
+                .WithMany(p => p.OrderLines)
+                .HasForeignKey(ol => ol.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            // Relation OrderLine → Order avec suppression en cascade
+            modelBuilder.Entity<OrderLine>()
+                .HasOne(ol => ol.Order)           // chaque OrderLine a un Order
+                .WithMany(o => o.Lines)           // chaque Order peut avoir plusieurs OrderLines
+                .HasForeignKey(ol => ol.OrderId)  // colonne FK dans OrderLine
+                .OnDelete(DeleteBehavior.Cascade); // si l’Order est supprimé, toutes ses lignes le sont aussi
+
+
         }
     }
 }
