@@ -1,0 +1,182 @@
+[
+  {
+    "ClientID": 1,
+    "Name": "Dupont",
+    "FirstName": "Jean",
+    "Address": "Rue de la Gare 12, 4000 Liège",
+    "PhoneNB": "0472 12 34 56",
+    "Email": "jean.dupont@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 2,
+    "Name": "Martin",
+    "FirstName": "Sophie",
+    "Address": "Avenue Louise 45, 1050 Bruxelles",
+    "PhoneNB": "0496 22 33 44",
+    "Email": "sophie.martin@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 3,
+    "Name": "Lefebvre",
+    "FirstName": "Paul",
+    "Address": "Chaussée de Namur 88, 1300 Wavre",
+    "PhoneNB": "0487 55 66 77",
+    "Email": "paul.lefebvre@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 4,
+    "Name": "Lambert",
+    "FirstName": "Julie",
+    "Address": "Rue du Parc 3, 5000 Namur",
+    "PhoneNB": "0468 98 76 54",
+    "Email": "julie.lambert@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 5,
+    "Name": "Dubois",
+    "FirstName": "Luc",
+    "Address": "Boulevard Tirou 210, 6000 Charleroi",
+    "PhoneNB": "0471 33 44 55",
+    "Email": "luc.dubois@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 6,
+    "Name": "Petit",
+    "FirstName": "Marie",
+    "Address": "Place Saint-Lambert 1, 4000 Liège",
+    "PhoneNB": "0498 11 22 33",
+    "Email": "marie.petit@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 7,
+    "Name": "Simon",
+    "FirstName": "Thomas",
+    "Address": "Rue Royale 99, 1000 Bruxelles",
+    "PhoneNB": "0485 44 55 66",
+    "Email": "thomas.simon@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 8,
+    "Name": "Renard",
+    "FirstName": "Claire",
+    "Address": "Avenue Albert 25, 1190 Forest",
+    "PhoneNB": "0470 77 88 99",
+    "Email": "claire.renard@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 9,
+    "Name": "Masson",
+    "FirstName": "Hugo",
+    "Address": "Rue du Centre 8, 7000 Mons",
+    "PhoneNB": "0493 55 44 33",
+    "Email": "hugo.masson@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 10,
+    "Name": "Gérard",
+    "FirstName": "Laura",
+    "Address": "Rue des Alliés 52, 4020 Liège",
+    "PhoneNB": "0481 22 11 00",
+    "Email": "laura.gerard@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 11,
+    "Name": "Fontaine",
+    "FirstName": "Benoît",
+    "Address": "Rue Haute 73, 1000 Bruxelles",
+    "PhoneNB": "0469 88 77 66",
+    "Email": "benoit.fontaine@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 12,
+    "Name": "Henry",
+    "FirstName": "Chloé",
+    "Address": "Rue du Moulin 14, 7800 Ath",
+    "PhoneNB": "0486 00 11 22",
+    "Email": "chloe.henry@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 13,
+    "Name": "Meunier",
+    "FirstName": "Nicolas",
+    "Address": "Rue des Champs 65, 5300 Andenne",
+    "PhoneNB": "0476 33 22 11",
+    "Email": "nicolas.meunier@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 14,
+    "Name": "Marchal",
+    "FirstName": "Emma",
+    "Address": "Rue des Roses 5, 7100 La Louvière",
+    "PhoneNB": "0491 23 45 67",
+    "Email": "emma.marchal@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 15,
+    "Name": "Joly",
+    "FirstName": "Antoine",
+    "Address": "Place de l'Église 4, 6900 Marche-en-Famenne",
+    "PhoneNB": "0479 66 77 88",
+    "Email": "antoine.joly@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 16,
+    "Name": "François",
+    "FirstName": "Isabelle",
+    "Address": "Rue du Marché 18, 5000 Namur",
+    "PhoneNB": "0492 34 56 78",
+    "Email": "isabelle.francois@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 17,
+    "Name": "Jacquet",
+    "FirstName": "Pierre",
+    "Address": "Rue des Ardennes 87, 6700 Arlon",
+    "PhoneNB": "0478 88 99 00",
+    "Email": "pierre.jacquet@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 18,
+    "Name": "Lemoine",
+    "FirstName": "Camille",
+    "Address": "Rue de la Poste 33, 5004 Bouge",
+    "PhoneNB": "0467 12 98 76",
+    "Email": "camille.lemoine@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 19,
+    "Name": "Rousseau",
+    "FirstName": "Adrien",
+    "Address": "Avenue des Nations 7, 6040 Jumet",
+    "PhoneNB": "0482 66 55 44",
+    "Email": "adrien.rousseau@gmail.com",
+    "Orders": []
+  },
+  {
+    "ClientID": 20,
+    "Name": "Michel",
+    "FirstName": "Alice",
+    "Address": "Rue de la Liberté 12, 7500 Tournai",
+    "PhoneNB": "0494 33 22 11",
+    "Email": "alice.michel@gmail.com",
+    "Orders": []
+  }
+]
