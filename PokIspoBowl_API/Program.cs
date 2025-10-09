@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using PokIspoBowl_API.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddDbContext<PokIspoBowlContext>(options => options.UseNpgsql("Host=localhost;Port=5432;" +
+    "Database=PokISPOBowl_Tests;Username=postgres;Password=password"));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
