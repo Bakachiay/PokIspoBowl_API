@@ -18,7 +18,7 @@ namespace PokIspoBowl_API.Model
         public bool IsExtra { get; set; }
 
 
-        public long BowlId { get; set; }
+        public int BowlId { get; set; }
         [ForeignKey("BowlId")]
         public Bowl BowlPreset { get; set; }
 
