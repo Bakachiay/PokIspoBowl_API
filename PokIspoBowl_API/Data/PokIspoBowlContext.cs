@@ -39,6 +39,15 @@ namespace PokIspoBowl_API.Data
                 .Property(i => i.Type)
                 .HasConversion<string>();
 
+            // Permet de gérer l'héritage dans la DB, ici on aura une seule table Products
+            // avec une colonne qui permettra de savoir si c'est un Bowl ou un dessert.
+            // Inheritance TPH (par défaut). Discriminateur optionnel :
+            modelBuilder.Entity<Product>()
+                .HasDiscriminator<string>("ProductType")
+                .HasValue<Bowl>("Bowl")
+                .HasValue<Dessert>("Dessert");
+
+
         }
     }
 }
