@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using PokIspoBowl_API.Model;
 using System.Text.Json;
 
@@ -13,8 +14,62 @@ namespace PokIspoBowl_API.Data
             //Même chose que quand on fait dotnet ef update etc...
             context.Database.Migrate();
 
+            ReadFakeClients(context,logger);
+
+            ReadFakeIngredients(context, logger);
+
+
+        }
+
+        private static void ReadFakeIngredients(PokIspoBowlContext context, ILogger logger)
+        {
+            //Vérifier si il n'y a pas déjà des ingrédients dans la DB
+            if (context.Ingredients.Any())
+            {
+                logger.LogInformation("La base de donnée contient déjà des ingrédients...");
+                return;
+            }
+
+            //On va chercher le chemin vers le fichier JSON
+            //Path.Combine() permet de combiner 3 strings en un seul string/chemin
+            //AppContext.BaseDirectory permet de retrouver le répertoire de base de l'application
+            string jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "ingredients.json");
+
+            if (!File.Exists(jsonFilePath))
+            {
+                logger.LogError("Le fichier ingredients.json est introuvable...");
+                return;
+            }
+
+            try
+            {
+                //On va lire le fichier telquel
+                string jsonData = File.ReadAllText(jsonFilePath);
+
+                List<Ingredient>? ingredients = JsonSerializer.Deserialize<List<Ingredient>>(jsonData, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (ingredients != null && ingredients.Count > 0)
+                {
+                    context.Ingredients.AddRange(ingredients);
+                    context.SaveChanges();
+                    logger.LogInformation($"{ingredients.Count()} ingredients ont été ajouté dans la table Ingredients");
+                }
+                else
+                {
+                    logger.LogWarning("Pas d'ingrédients detectés dans le fichier ingredients.json");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogError("Erreur lors de la lecture du fichier JSON... " + ex.Message);
+            }
+        }
+
+        public static void ReadFakeClients(PokIspoBowlContext context, ILogger logger)
+        {
             //Vérifier si il n'y a pas déjà des clients dans la DB
-            if(context.Clients.Any())
+            if (context.Clients.Any())
             {
                 logger.LogInformation("La base de donnée contient déjà des clients...");
                 return;
@@ -25,7 +80,7 @@ namespace PokIspoBowl_API.Data
             //AppContext.BaseDirectory permet de retrouver le répertoire de base de l'application
             string jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "clients.json");
 
-            if(!File.Exists(jsonFilePath))
+            if (!File.Exists(jsonFilePath))
             {
                 logger.LogError("Le fichier clients.json est introuvable...");
                 return;
@@ -36,9 +91,9 @@ namespace PokIspoBowl_API.Data
                 //On va lire le fichier telquel
                 string jsonData = File.ReadAllText(jsonFilePath);
 
-                List<Client>? clients = JsonSerializer.Deserialize<List<Client>>(jsonData, new JsonSerializerOptions { PropertyNameCaseInsensitive = true});
-            
-                if(clients != null && clients.Count > 0) // pourquoi pas clients.any() ??
+                List<Client>? clients = JsonSerializer.Deserialize<List<Client>>(jsonData, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (clients != null && clients.Count > 0) // pourquoi pas clients.any() ??
                 {
                     context.Clients.AddRange(clients);
                     context.SaveChanges();
@@ -48,14 +103,12 @@ namespace PokIspoBowl_API.Data
                 {
                     logger.LogWarning("Pas de clients detectés dans le fichier clients.json");
                 }
-                
+
             }
             catch (Exception ex)
             {
-                logger.LogError("Erreur lors de la lecture du fichier JSON... "+ ex.Message);
+                logger.LogError("Erreur lors de la lecture du fichier JSON... " + ex.Message);
             }
-
-
         }
     }
 }
