@@ -33,5 +33,9 @@ namespace PokIspoBowl_API.Model
         // Chaque ingrédient a un type (voir l'énum IngredientType
         [Required, EnumDataType(typeof(IngredientType))]
         public IngredientType Type { get; set; }
+
+        [RegularExpression(@"^.*\.(jpg|jpeg|png)$",
+        ErrorMessage = "L'image doit être un fichier se terminant par .jpg, .jpeg ou .png.")]
+        public string Picture { get; set; }
     }
 }
