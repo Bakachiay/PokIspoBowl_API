@@ -36,6 +36,6 @@ namespace PokIspoBowl_API.Model
 
         [RegularExpression(@"^.*\.(jpg|jpeg|png)$",
         ErrorMessage = "L'image doit être un fichier se terminant par .jpg, .jpeg ou .png.")]
-        public string Picture { get; set; }
+        public string? Picture { get; set; }
     }
 }
