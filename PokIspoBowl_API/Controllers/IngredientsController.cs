@@ -78,8 +78,16 @@ namespace PokIspoBowl_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Ingredient>> PostIngredient(Ingredient ingredient)
         {
-            _context.Ingredients.Add(ingredient);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Ingredients.Add(ingredient);
+                await _context.SaveChangesAsync();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            
 
             return CreatedAtAction("GetIngredient", new { id = ingredient.IngredientId }, ingredient);
         }

@@ -1,6 +1,5 @@
 [
   {
-    "IngredientId": 1,
     "Name": "Kale",
     "SupplementPrice": 1.14,
     "Price": 1.56,
@@ -8,7 +7,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 2,
     "Name": "Cauliflower Rice",
     "SupplementPrice": 2.53,
     "Price": 2.87,
@@ -16,7 +14,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 3,
     "Name": "Blue Cheese",
     "SupplementPrice": 1.87,
     "Price": 1.12,
@@ -24,7 +21,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 4,
     "Name": "Cilantro",
     "SupplementPrice": 2.54,
     "Price": 1.22,
@@ -32,7 +28,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 5,
     "Name": "Corn",
     "SupplementPrice": 3.33,
     "Price": 2.19,
@@ -40,7 +35,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 6,
     "Name": "Almonds",
     "SupplementPrice": 1.57,
     "Price": 1.46,
@@ -48,7 +42,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 7,
     "Name": "Grilled Chicken",
     "SupplementPrice": 3.07,
     "Price": 0.58,
@@ -56,7 +49,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 8,
     "Name": "Sweet Potato Noodles",
     "SupplementPrice": 2.63,
     "Price": 2.36,
@@ -64,7 +56,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 9,
     "Name": "Lettuce",
     "SupplementPrice": 2.07,
     "Price": 2.36,
@@ -72,7 +63,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 10,
     "Name": "Italian",
     "SupplementPrice": 2.08,
     "Price": 1.77,
@@ -80,7 +70,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 11,
     "Name": "Sunflower Seeds",
     "SupplementPrice": 2.07,
     "Price": 1.14,
@@ -88,7 +77,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 12,
     "Name": "Sriracha",
     "SupplementPrice": 4.14,
     "Price": 0.58,
@@ -96,7 +84,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 13,
     "Name": "Crab",
     "SupplementPrice": 0.65,
     "Price": 1.33,
@@ -104,7 +91,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 14,
     "Name": "Mushrooms",
     "SupplementPrice": 2.81,
     "Price": 0.33,
@@ -112,7 +98,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 15,
     "Name": "Creamy Caesar",
     "SupplementPrice": 3.96,
     "Price": 0.67,
@@ -120,7 +105,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 16,
     "Name": "Jalapeños",
     "SupplementPrice": 2.63,
     "Price": 2.36,
@@ -128,7 +112,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 17,
     "Name": "White Rice",
     "SupplementPrice": 1.33,
     "Price": 0.33,
@@ -136,7 +119,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 18,
     "Name": "Peas",
     "SupplementPrice": 2.36,
     "Price": 0.67,
@@ -144,7 +126,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 19,
     "Name": "French",
     "SupplementPrice": 1.14,
     "Price": 1.56,
@@ -152,7 +133,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 20,
     "Name": "Pineapple",
     "SupplementPrice": 2.07,
     "Price": 1.14,
@@ -160,7 +140,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 21,
     "Name": "Egg",
     "SupplementPrice": 2.54,
     "Price": 1.22,
@@ -168,7 +147,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 22,
     "Name": "Mixed Greens",
     "SupplementPrice": 3.33,
     "Price": 2.19,
@@ -176,7 +154,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 23,
     "Name": "Spicy Mayo",
     "SupplementPrice": 1.57,
     "Price": 1.46,
@@ -184,7 +161,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 24,
     "Name": "Cashews",
     "SupplementPrice": 3.07,
     "Price": 0.58,
@@ -192,7 +168,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 25,
     "Name": "Sesame Ginger",
     "SupplementPrice": 2.63,
     "Price": 2.36,
@@ -200,7 +175,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 26,
     "Name": "Lime Vinaigrette",
     "SupplementPrice": 2.07,
     "Price": 2.36,
@@ -208,7 +182,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 27,
     "Name": "Avocado",
     "SupplementPrice": 2.08,
     "Price": 1.77,
@@ -216,7 +189,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 28,
     "Name": "Olives",
     "SupplementPrice": 2.07,
     "Price": 1.14,
@@ -224,7 +196,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 29,
     "Name": "Shrimp",
     "SupplementPrice": 4.14,
     "Price": 0.58,
@@ -232,7 +203,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 30,
     "Name": "Balsamic",
     "SupplementPrice": 0.65,
     "Price": 1.33,
@@ -240,7 +210,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 31,
     "Name": "Coconut Flakes",
     "SupplementPrice": 2.81,
     "Price": 0.33,
@@ -248,7 +217,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 32,
     "Name": "Quinoa",
     "SupplementPrice": 1.33,
     "Price": 0.33,
@@ -256,7 +224,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 33,
     "Name": "Honey Mustard",
     "SupplementPrice": 2.36,
     "Price": 0.67,
@@ -264,7 +231,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 34,
     "Name": "Crispy Onions",
     "SupplementPrice": 1.14,
     "Price": 1.56,
@@ -272,7 +238,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 35,
     "Name": "Turkey",
     "SupplementPrice": 2.07,
     "Price": 1.14,
@@ -280,7 +245,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 36,
     "Name": "Couscous",
     "SupplementPrice": 3.33,
     "Price": 2.19,
@@ -288,7 +252,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 37,
     "Name": "Peanut Sauce",
     "SupplementPrice": 1.57,
     "Price": 1.46,
@@ -296,7 +259,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 38,
     "Name": "Green Onions",
     "SupplementPrice": 3.07,
     "Price": 0.58,
@@ -304,7 +266,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 39,
     "Name": "Spinach",
     "SupplementPrice": 3.42,
     "Price": 2.07,
@@ -312,7 +273,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 40,
     "Name": "Zucchini Noodles",
     "SupplementPrice": 2.26,
     "Price": 3.0,
@@ -320,7 +280,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 42,
     "Name": "Brown Rice",
     "SupplementPrice": 2.04,
     "Price": 1.42,
@@ -328,7 +287,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 43,
     "Name": "Pickled Ginger",
     "SupplementPrice": 2.08,
     "Price": 1.0,
@@ -336,7 +294,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 44,
     "Name": "Ranch",
     "SupplementPrice": 3.35,
     "Price": 2.85,
@@ -344,7 +301,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 45,
     "Name": "Soy Sauce",
     "SupplementPrice": 3.8,
     "Price": 1.45,
@@ -352,7 +308,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 46,
     "Name": "Steak",
     "SupplementPrice": 4.94,
     "Price": 1.2,
@@ -360,7 +315,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 47,
     "Name": "Barley",
     "SupplementPrice": 3.22,
     "Price": 2.07,
@@ -368,7 +322,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 48,
     "Name": "Tofu",
     "SupplementPrice": 2.04,
     "Price": 0.67,
@@ -376,7 +329,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 49,
     "Name": "Thousand Island",
     "SupplementPrice": 3.79,
     "Price": 0.28,
@@ -384,7 +336,6 @@
     "SelectedInBowlPreset": null
   },
   {
-    "IngredientId": 50,
     "Name": "Broccoli",
     "SupplementPrice": 0.75,
     "Price": 1.77,
