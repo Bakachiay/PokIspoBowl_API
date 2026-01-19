@@ -82,14 +82,19 @@ namespace PokIspoBowl_API.Controllers
             {
                 _context.Ingredients.Add(ingredient);
                 await _context.SaveChangesAsync();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            
+                return CreatedAtAction("GetIngredient", new { id = ingredient.IngredientId }, ingredient);
 
-            return CreatedAtAction("GetIngredient", new { id = ingredient.IngredientId }, ingredient);
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict("Un ingrédient avec ce nom et ce type existe déjà.");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Erreur interne du serveur.");
+            }
+
+
         }
 
         // DELETE: api/Ingredients/5
