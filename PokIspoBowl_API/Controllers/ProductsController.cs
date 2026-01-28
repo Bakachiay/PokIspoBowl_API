@@ -12,47 +12,47 @@ namespace PokIspoBowl_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClientsController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly PokIspoBowlContext _context;
 
-        public ClientsController(PokIspoBowlContext context)
+        public ProductsController(PokIspoBowlContext context)
         {
             _context = context;
         }
 
-        // GET: api/Clients
+        // GET: api/Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return await _context.Clients.ToListAsync();
+            return await _context.Products.ToListAsync();
         }
 
-        // GET: api/Clients/5
+        // GET: api/Products/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Client>> GetClient(int id)
+        public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var client = await _context.Clients.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
 
-            if (client == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return client;
+            return product;
         }
 
-        // PUT: api/Clients/5
+        // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutClient(int id, Client client)
+        public async Task<IActionResult> PutProduct(int id, Product product)
         {
-            if (id != client.ClientID)
+            if (id != product.ProductId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(client).State = EntityState.Modified;
+            _context.Entry(product).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace PokIspoBowl_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ClientExists(id))
+                if (!ProductExists(id))
                 {
                     return NotFound();
                 }
@@ -73,17 +73,22 @@ namespace PokIspoBowl_API.Controllers
             return NoContent();
         }
 
-        // POST: api/Clients
+        // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Client>> PostClient(Client client)
+        public async Task<ActionResult<Product>> PostProduct(Product product)
         {
             try
             {
-                _context.Clients.Add(client);
+                _context.Products.Add(product);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction("GetClient", new { id = client.ClientID }, client);
+                return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
+
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict("Un produit avec ce nom existe déjà.");
             }
             catch (Exception)
             {
@@ -91,25 +96,25 @@ namespace PokIspoBowl_API.Controllers
             }
         }
 
-        // DELETE: api/Clients/5
+        // DELETE: api/Products/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteClient(int id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
-            var client = await _context.Clients.FindAsync(id);
-            if (client == null)
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            _context.Clients.Remove(client);
+            _context.Products.Remove(product);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool ClientExists(int id)
+        private bool ProductExists(int id)
         {
-            return _context.Clients.Any(e => e.ClientID == id);
+            return _context.Products.Any(e => e.ProductId == id);
         }
     }
 }
